@@ -1,0 +1,249 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AttachToNewJob" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_StrSGSFileNo" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1265,3473</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>InsertOrderNumber_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="62">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AttachToNewJob" sap:VirtualizedContainerService.HintSize="476,3408" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Start AttachToNewJob_Log message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;[ AttachToNewJob - Start ]&quot;]" />
+    <ui:OnUiElementVanish ContinueOnError="{x:Null}" WaitNotActive="{x:Null}" DisplayName="SIR Wait On Element Vanish" sap:VirtualizedContainerService.HintSize="434,355" sap2010:WorkflowViewState.IdRef="OnUiElementVanish_1" RepeatForever="False" WaitNotVisible="True">
+      <ui:OnUiElementVanish.Body>
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,178" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="358,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="Sir Wait Vanish!" />
+        </Sequence>
+      </ui:OnUiElementVanish.Body>
+      <ui:OnUiElementVanish.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="91f9ccdf-90a9-4523-9670-589fe8eb7c03" InformativeScreenshot="44b2be36d2ec0f4136752ade0ad93fd2" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/CustomerData/Default?*' tag='IFRAME' /&gt;&lt;webctrl tag='P' visibleinnertext='  Please wait...' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:OnUiElementVanish.Target>
+    </ui:OnUiElementVanish>
+    <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Sir Items_On Element Appear" sap:VirtualizedContainerService.HintSize="434,267" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1" RepeatForever="False">
+      <ui:OnUiElementAppear.Body>
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Order Details Appeared!" />
+      </ui:OnUiElementAppear.Body>
+      <ui:OnUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2a1cc8f2-3c7b-45ec-9627-439f192b8c40" InformativeScreenshot="f48cd7a53313eaa742f529857e29af31" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl class='detailsTitle' parentid='Summary' tag='SPAN' aaname='Order Details' /&gt;" TimeoutMS="300000" WaitForReady="COMPLETE" />
+      </ui:OnUiElementAppear.Target>
+    </ui:OnUiElementAppear>
+    <Delay DisplayName="3_Delay" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Sir Check_Click" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cde7cb33-665c-47b0-8c96-d7a6da09e05a" InformativeScreenshot="c02c344c85e3e185fbebf64fb52795ac" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl id='*Table' tag='TABLE' /&gt;&lt;webctrl id='master-checkbox-*' tableRow='1' tag='INPUT' type='checkbox' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <Delay DisplayName="1_Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Sir Topni_Click" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cde7cb33-665c-47b0-8c96-d7a6da09e05a" InformativeScreenshot="27f72f0edccc9bf81b8ee9dc188f809c" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl id='*Table' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='I' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <Delay DisplayName="1_Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_3" />
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Sir Attach to existing job_Click" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cde7cb33-665c-47b0-8c96-d7a6da09e05a" InformativeScreenshot="83a5e1d33ae506696af2c24e7b38ccdb" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl id='*Table' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='LI' aaname='Attach to existing job' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Sir Attach order line(s)_On Element Appear" sap:VirtualizedContainerService.HintSize="434,267" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_2" RepeatForever="False">
+      <ui:OnUiElementAppear.Body>
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Attach order line(s) Appeared!" />
+      </ui:OnUiElementAppear.Body>
+      <ui:OnUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2a1cc8f2-3c7b-45ec-9627-439f192b8c40" InformativeScreenshot="46b95800de2b5f90c86683c3b3b45baf" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl tag='H3' aaname='Attach Order Line(s)' /&gt;" TimeoutMS="300000" WaitForReady="COMPLETE" />
+      </ui:OnUiElementAppear.Target>
+    </ui:OnUiElementAppear>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Sir Attach to existing job_Click" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cde7cb33-665c-47b0-8c96-d7a6da09e05a" InformativeScreenshot="0c16d89ceb1f9edb82db51784cfac25f" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl id='btnAttach' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Sir Unattached order lines_On Element Appear" sap:VirtualizedContainerService.HintSize="434,267" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_3" RepeatForever="False">
+      <ui:OnUiElementAppear.Body>
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Unattached order lines Appeared!" />
+      </ui:OnUiElementAppear.Body>
+      <ui:OnUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2a1cc8f2-3c7b-45ec-9627-439f192b8c40" InformativeScreenshot="a471468268a0e8d1e99df959052190a7" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl class='head' parentid='job-summary' tag='DIV' aaname='*Unattached Order Lines' /&gt;" TimeoutMS="300000" WaitForReady="COMPLETE" />
+      </ui:OnUiElementAppear.Target>
+    </ui:OnUiElementAppear>
+    <Delay DisplayName="1_Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
+    <ui:OnUiElementVanish ContinueOnError="{x:Null}" WaitNotActive="{x:Null}" DisplayName="SIR Wait On Element Vanish" sap:VirtualizedContainerService.HintSize="434,355" sap2010:WorkflowViewState.IdRef="OnUiElementVanish_2" RepeatForever="False" WaitNotVisible="True">
+      <ui:OnUiElementVanish.Body>
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,178" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="358,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="Sir Wait Vanish!" />
+        </Sequence>
+      </ui:OnUiElementVanish.Body>
+      <ui:OnUiElementVanish.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="91f9ccdf-90a9-4523-9670-589fe8eb7c03" InformativeScreenshot="44b2be36d2ec0f4136752ade0ad93fd2" Selector="&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/CustomerData/Default?*' tag='IFRAME' /&gt;&lt;webctrl tag='P' visibleinnertext='  Please wait...' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:OnUiElementVanish.Target>
+    </ui:OnUiElementVanish>
+    <Delay DisplayName="1_Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_6" />
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Sir existing job_Click" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cde7cb33-665c-47b0-8c96-d7a6da09e05a" InformativeScreenshot="cfd628841014b4da11b535460cbde80c" Selector="[string.Format(&quot;&lt;html app='chrome.exe' title='SIR' /&gt;&lt;webctrl src='https://sir-integrated.sgs.com/Controls/Order/Default?*' tag='IFRAME' /&gt;&lt;webctrl id='*Table' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' aaname='*{0}*' /&gt;&quot;, In_StrSGSFileNo)]" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:LogMessage DisplayName="End AttachToNewJob_Log message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;[ AttachToNewJob - End ]&quot;]" />
+  </Sequence>
+</Activity>

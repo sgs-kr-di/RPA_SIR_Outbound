@@ -1,0 +1,1794 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test3" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1265,852" sap2010:WorkflowViewState.IdRef="test3_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="74">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="test3" sap:VirtualizedContainerService.HintSize="539,294" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[StrChkErrResult]" sap:VirtualizedContainerService.HintSize="497,206" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <Switch.Default>
+        <Sequence sap:VirtualizedContainerService.HintSize="473,1468" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="431,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="596,1088" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If Condition="[StrEmailId = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="358,52" sap2010:WorkflowViewState.IdRef="If_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,256" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">["[Error] " + DateTime.Now.ToString("yyyy.MM.dd") + "_" +  Config("processName").ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">["Date : " + DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss") + Environment.NewLine  +
+"Process Name : " + Config("processName").ToString + Environment.NewLine  +
+"Folder : " + StrWorkFolderName + Environment.NewLine  +
+"　" + Environment.NewLine +
+"Exception Source : " + StrErrSource + Environment.NewLine  +
+"Exception Message : " + StrErrMessage]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">kr.rpa1@sgs.com</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">hiel.kim@sgs.com</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="476,568" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,256" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                        <ui:MultipleAssign.AssignOperations>
+                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String" xml:space="preserve">["[실패] " + StrWorkFolderName  + ", " + StrWorkSolVesselName]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[StrWorkSolEmailReciept]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[StrWorkSolEmailGroupReciept]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                          </scg:List>
+                        </ui:MultipleAssign.AssignOperations>
+                      </ui:MultipleAssign>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Directory.GetFiles(StrDirIoBasePathInput + &quot;\&quot; + StrWorkFolderName)]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="itemFiles" />
+                            </ActivityAction.Argument>
+                            <AddToCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[itemFiles.ToString]" />
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ui:CommentOut.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:CommentOut>
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,318" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["[실패] " + StrWorkFolderName  + ", " + StrWorkSolVesselName]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[StrWorkSolEmailReciept]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[StrWorkSolEmailGroupReciept]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[StrWorkSolEmailReciept]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">HyunJin.Kim@sgs.com; james.han@sgs.com;</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+          </ui:MultipleAssign>
+          <If Condition="[StrEmailId &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="431,389" sap2010:WorkflowViewState.IdRef="If_2">
+            <If.Then>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendExceptionEmail workflow" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\SendEmail.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrSubject">[StrSubject]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrBody">[StrBodyOne]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailIdCC">[StrEmailIdCC]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailId">[StrEmailId]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrRobotEmailId">[StrRobotId]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrBody2">[StrBodyTwo]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrProcessName">[StrProcessName]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_StrFileNameError">[StrFileNameError]</InArgument>
+                  <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="In_StrCollectionAttachmentsFiles">[StrCollectionAttachmentsFiles]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </If.Then>
+          </If>
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,256" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["[Error] " + DateTime.Now.ToString("yyyy.MM.dd") + "_" +  Config("processName").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["Date : " + DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss") + Environment.NewLine  +
+"Process Name : " + Config("processName").ToString + Environment.NewLine  +
+"Folder : " + StrWorkFolderName + Environment.NewLine  +
+"　" + Environment.NewLine +
+"Exception Source : " + StrErrSource + Environment.NewLine  +
+"Exception Message : " + StrErrMessage]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">svc_.rpa-ulsan1kr@sgs.com</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">hiel.kim@sgs.com</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_26">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+          </ui:MultipleAssign>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendExceptionEmail workflow" sap:VirtualizedContainerService.HintSize="431,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\SendEmail.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrSubject">[StrSubject]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrBody">[StrBodyOne]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailIdCC">[StrEmailIdCC]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailId">[StrEmailId]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrRobotEmailId">[StrRobotId]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrBody2">[StrBodyTwo]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrProcessName">[StrProcessName]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="In_StrFileNameError">[StrFileNameError]</InArgument>
+              <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="In_StrCollectionAttachmentsFiles">[StrCollectionAttachmentsFiles]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="431,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ClearCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="358,25" sap2010:WorkflowViewState.IdRef="ClearCollection`1_1" />
+              </Sequence>
+            </ui:CommentOut.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:CommentOut>
+        </Sequence>
+      </Switch.Default>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence x:Key="Business_SameFolder" sap:VirtualizedContainerService.HintSize="790,6232" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="StrTest" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BuildDataTable sap2010:Annotation.AnnotationText="FolderPath                 - 경로&#xA;ExcelName                 - 엑셀이름" DataTable="[DtSameFolderList]" DisplayName="SameFolderList_Build data table" sap:VirtualizedContainerService.HintSize="748,102" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FolderPath&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ExcelName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BuildDataTable>
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="748,1312" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathInput,&quot;*&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:String">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathInput" />
+              </ActivityAction.Argument>
+              <Sequence x:Name="__ReferenceID0" sap:VirtualizedContainerService.HintSize="712,1186" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="670,1098" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*&quot;)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput_Region" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="634,974" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="592,886" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:String">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <Sequence sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If Condition="[New DirectoryInfo(dirIoBasePathInput).Name.Equals(New DirectoryInfo(dirIoBasePathOutput).Name) = true]" sap:VirtualizedContainerService.HintSize="514,674" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If.Then>
+                                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="436,398" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                      <ui:ForEach.Body>
+                                        <ActivityAction x:TypeArguments="x:String">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:String" Name="ExcelFile" />
+                                          </ActivityAction.Argument>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="400,274" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dirIoBasePathInput ,ExcelFile}]" DataTable="[DtSameFolderList]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="358,186" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ForEach.Body>
+                                    </ui:ForEach>
+                                  </If.Then>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="748,1096" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathInput,&quot;*&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathInput" />
+              </ActivityAction.Argument>
+              <x:Reference>__ReferenceID0</x:Reference>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="748,1310" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathInput,&quot;*&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathInput" />
+              </ActivityAction.Argument>
+              <x:Reference>__ReferenceID0</x:Reference>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="748,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="598,140" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="358,52" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[Directory.GetDirectories(StrDirIoBasePathInput,&quot;*????????_SOL&quot;)]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:String">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathInput" />
+                    </ActivityAction.Argument>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="520,627" sap2010:WorkflowViewState.IdRef="ForEach`1_9" Values="[Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*????????_SOL&quot;)]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput" />
+                          </ActivityAction.Argument>
+                          <If Condition="[New DirectoryInfo(dirIoBasePathInput).Name.Equals(New DirectoryInfo(dirIoBasePathOutput).Name)]" sap:VirtualizedContainerService.HintSize="484,501" sap2010:WorkflowViewState.IdRef="If_4">
+                            <If.Then>
+                              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,312" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                <ui:ForEach.Body>
+                                  <ActivityAction x:TypeArguments="x:String">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:String" Name="ExcelFileName" />
+                                    </ActivityAction.Argument>
+                                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dirIoBasePathInput ,&#xA;ExcelFileName}]" DataTable="[DtSameFolderList]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                  </ActivityAction>
+                                </ui:ForEach.Body>
+                              </ui:ForEach>
+                            </If.Then>
+                          </If>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEach>
+            </Sequence>
+          </ui:CommentOut.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:CommentOut>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtSameFolderList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="748,2156" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowSameFolder" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="560,2041" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="StrSameGroupReceiptEmail" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadCell Cell="K3" DisplayName="RecipetEmail_Read Cell" sap:VirtualizedContainerService.HintSize="518,88" sap2010:WorkflowViewState.IdRef="ReadCell_1" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ReadCell Cell="K4" DisplayName="RecipetGroupEmail_Read Cell" sap:VirtualizedContainerService.HintSize="518,88" sap2010:WorkflowViewState.IdRef="ReadCell_2" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="518,184" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[System.IO.Directory.GetFiles(rowSameFolder(&quot;FolderPath&quot;).ToString)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="itemFiles" />
+                      </ActivityAction.Argument>
+                      <AddToCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[itemFiles.ToString]" />
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+                <ui:MultipleAssign sap2010:Annotation.AnnotationText="StrSameGroupReceiptEmail" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="518,287" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
+                  <ui:MultipleAssign.AssignOperations>
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_27">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">["[폴더체크] " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_28">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["Input폴더와 Output폴더에 동일한 폴더가 있습니다." + Environment.NewLine +
+"폴더명 : " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name + Environment.NewLine +
+" " + Environment.NewLine +
+"확인 부탁드립니다."]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_30">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_31">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail + ";" + "James.Han@sgs.com;"]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_32">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                    </scg:List>
+                  </ui:MultipleAssign.AssignOperations>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:MultipleAssign>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendExceptionEmail workflow" sap:VirtualizedContainerService.HintSize="518,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework\SendEmail.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrSubject">[StrSubject]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody">[StrBodyOne]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailIdCC">[StrEmailIdCC]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailId">[StrEmailId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrRobotEmailId">[StrRobotId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody2">[StrBodyTwo]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrProcessName">[StrProcessName]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrFileNameError">[StrFileNameError]</InArgument>
+                    <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="In_StrCollectionAttachmentsFiles">[StrCollectionAttachmentsFiles]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <TryCatch DisplayName="Move IoError Folder Invoke power shell_Try Catch" sap:VirtualizedContainerService.HintSize="518,928" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <ui:MoveFile DestinationResource="{x:Null}" PathResource="{x:Null}" ContinueOnError="True" Destination="[StrDirIoBasePathError + &quot;\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="334,159" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[rowSameFolder(&quot;FolderPath&quot;).ToString]" />
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="484,765" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="si:IOException">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                        </ActivityAction.Argument>
+                        <If Condition="[exception.Message.Contains(&quot;Cannot create a file when that file already exists.&quot;)]" sap:VirtualizedContainerService.HintSize="478,696" sap2010:WorkflowViewState.IdRef="If_5">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,420" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="358,133" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[StrDirIoBasePathError + &quot;\&quot; + New DirectoryInfo(rowSameFolder(&quot;FolderPath&quot;).ToString).Name]" />
+                              <ui:MoveFile DestinationResource="{x:Null}" PathResource="{x:Null}" ContinueOnError="True" Destination="[StrDirIoBasePathError + &quot;\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="358,159" sap2010:WorkflowViewState.IdRef="MoveFile_2" Path="[rowSameFolder(&quot;FolderPath&quot;).ToString]" />
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+                <ClearCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="518,25" sap2010:WorkflowViewState.IdRef="ClearCollection`1_2" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+      </Sequence>
+      <Sequence x:Key="ExcelError" sap:VirtualizedContainerService.HintSize="832,27160" sap2010:WorkflowViewState.IdRef="Sequence_22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BuildDataTable sap2010:Annotation.AnnotationText="FolderPath                 - 경로&#xA;ExcelName                 - 엑셀이름" DataTable="[DtSameFolderList]" DisplayName="SameFolderList_Build data table" sap:VirtualizedContainerService.HintSize="790,102" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FolderPath&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ExcelName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BuildDataTable>
+        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="790,26922" sap2010:WorkflowViewState.IdRef="ForEach`1_30" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathInput,&quot;*&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathInput" />
+              </ActivityAction.Argument>
+              <Sequence sap:VirtualizedContainerService.HintSize="754,26796" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="712,8876" sap2010:WorkflowViewState.IdRef="ForEach`1_27" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*&quot;)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput_Region" />
+                      </ActivityAction.Argument>
+                      <Sequence x:Name="__ReferenceID3" sap:VirtualizedContainerService.HintSize="676,8752" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="634,7390" sap2010:WorkflowViewState.IdRef="ForEach`1_21" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:String">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <Sequence x:Name="__ReferenceID2" sap:VirtualizedContainerService.HintSize="598,7266" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_12" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:String">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:String" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <Sequence x:Name="__ReferenceID1" sap:VirtualizedContainerService.HintSize="520,638" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[ExcelFile.Contains(&quot;~&quot;)]" sap:VirtualizedContainerService.HintSize="478,550" sap2010:WorkflowViewState.IdRef="If_6">
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="400,274" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dirIoBasePathInput ,ExcelFile}]" DataTable="[DtSameFolderList]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="358,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_13" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_14" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_15" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_16" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_17" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_18" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_19" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,762" sap2010:WorkflowViewState.IdRef="ForEach`1_20" Values="[System.IO.Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="634,994" sap2010:WorkflowViewState.IdRef="ForEach`1_22" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <x:Reference>__ReferenceID2</x:Reference>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap2010:WorkflowViewState.IdRef="ForEach`1_23" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <x:Reference>__ReferenceID2</x:Reference>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap2010:WorkflowViewState.IdRef="ForEach`1_24" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <x:Reference>__ReferenceID2</x:Reference>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap2010:WorkflowViewState.IdRef="ForEach`1_25" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <x:Reference>__ReferenceID2</x:Reference>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap2010:WorkflowViewState.IdRef="ForEach`1_26" Values="[System.IO.Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <x:Reference>__ReferenceID2</x:Reference>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="712,8876" sap2010:WorkflowViewState.IdRef="ForEach`1_28" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*&quot;)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput_Region" />
+                      </ActivityAction.Argument>
+                      <x:Reference>__ReferenceID3</x:Reference>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="712,8876" sap2010:WorkflowViewState.IdRef="ForEach`1_29" Values="[System.IO.Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*&quot;)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="dirIoBasePathOutput_Region" />
+                      </ActivityAction.Argument>
+                      <x:Reference>__ReferenceID3</x:Reference>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEach>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtSameFolderList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="358,52" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowSameFolder" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="566,1857" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="StrSameGroupReceiptEmail" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadCell Cell="K3" DisplayName="RecipetEmail_Read Cell" sap:VirtualizedContainerService.HintSize="524,88" sap2010:WorkflowViewState.IdRef="ReadCell_3" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ReadCell Cell="K4" DisplayName="RecipetGroupEmail_Read Cell" sap:VirtualizedContainerService.HintSize="524,88" sap2010:WorkflowViewState.IdRef="ReadCell_4" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="524,186" sap2010:WorkflowViewState.IdRef="ForEach`1_31" Values="[Directory.GetFiles(rowSameFolder(&quot;FolderPath&quot;).ToString)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="itemFiles" />
+                      </ActivityAction.Argument>
+                      <AddToCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[itemFiles.ToString]" />
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+                <ui:MultipleAssign sap2010:Annotation.AnnotationText="StrSameGroupReceiptEmail" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="524,287" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+                  <ui:MultipleAssign.AssignOperations>
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_33">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">["[폴더체크] " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_34">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["Excel에 올바르지 않은 값이 있습니다." + Environment.NewLine +
+"폴더명 : " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name + Environment.NewLine +
+" " + Environment.NewLine +
+"확인 부탁드립니다."]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_35">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_36">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_37">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail + ";" + "James.Han@sgs.com;"]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_38">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                    </scg:List>
+                  </ui:MultipleAssign.AssignOperations>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:MultipleAssign>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendExceptionEmail workflow" sap:VirtualizedContainerService.HintSize="524,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Framework\SendEmail.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrSubject">[StrSubject]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody">[StrBodyOne]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailIdCC">[StrEmailIdCC]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailId">[StrEmailId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrRobotEmailId">[StrRobotId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody2">[StrBodyTwo]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrProcessName">[StrProcessName]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrFileNameError">[StrFileNameError]</InArgument>
+                    <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="In_StrCollectionAttachmentsFiles">[StrCollectionAttachmentsFiles]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <TryCatch DisplayName="Move IoError Folder Invoke power shell_Try Catch" sap:VirtualizedContainerService.HintSize="524,742" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Move-Item" DisplayName="Move IoError Folder_Invoke power shell" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1">
+                      <ui:InvokePowerShell.Parameters>
+                        <InArgument x:TypeArguments="x:String" x:Key="Path">[rowSameFolder("FolderPath").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="Destination">[StrDirIoBasePathError + "\"]</InArgument>
+                      </ui:InvokePowerShell.Parameters>
+                      <ui:InvokePowerShell.PowerShellVariables>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokePowerShell.PowerShellVariables>
+                    </ui:InvokePowerShell>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="490,579" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="si:IOException">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                        </ActivityAction.Argument>
+                        <If Condition="[exception.Message.Contains(&quot;Cannot create a file when that file already exists.&quot;)]" sap:VirtualizedContainerService.HintSize="484,510" sap2010:WorkflowViewState.IdRef="If_7">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,321" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="358,133" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[StrDirIoBasePathError + &quot;\&quot; + New DirectoryInfo(rowSameFolder(&quot;FolderPath&quot;).ToString).Name]" />
+                              <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Move-Item" DisplayName="Move IoError Folder_Invoke power shell" sap:VirtualizedContainerService.HintSize="358,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_2">
+                                <ui:InvokePowerShell.Parameters>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Path">[rowSameFolder("FolderPath").ToString]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Destination">[StrDirIoBasePathError + "\"]</InArgument>
+                                </ui:InvokePowerShell.Parameters>
+                                <ui:InvokePowerShell.PowerShellVariables>
+                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                </ui:InvokePowerShell.PowerShellVariables>
+                              </ui:InvokePowerShell>
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+                <ClearCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="524,25" sap2010:WorkflowViewState.IdRef="ClearCollection`1_3" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+      </Sequence>
+      <Sequence x:Key="ExcelTempError" sap:VirtualizedContainerService.HintSize="1243,3408" sap2010:WorkflowViewState.IdRef="Sequence_31">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BuildDataTable sap2010:Annotation.AnnotationText="FolderPath                 - 경로&#xA;ExcelName                 - 엑셀이름" DataTable="[DtSameFolderList]" DisplayName="SameFolderList_Build data table" sap:VirtualizedContainerService.HintSize="1201,102" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FolderPath&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ExcelName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BuildDataTable>
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1201,52" sap2010:WorkflowViewState.IdRef="ForEach`1_35" Values="[Directory.GetDirectories(StrDirIoBasePathInput,&quot;*&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:String">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathInput" />
+              </ActivityAction.Argument>
+              <Sequence sap:VirtualizedContainerService.HintSize="1165,1164" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1123,1076" sap2010:WorkflowViewState.IdRef="ForEach`1_34" Values="[Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*&quot;)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput_Region" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="1087,950" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1045,862" sap2010:WorkflowViewState.IdRef="ForEach`1_33" Values="[Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:String">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <Sequence sap:VirtualizedContainerService.HintSize="1009,736" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="967,648" sap2010:WorkflowViewState.IdRef="ForEach`1_32" Values="[Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:String">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:String" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="931,522" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[ExcelFile.Contains(&quot;~&quot;)]" sap:VirtualizedContainerService.HintSize="889,434" sap2010:WorkflowViewState.IdRef="If_8">
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="422,80" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="422,274" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dirIoBasePathInput ,ExcelFile}]" DataTable="[DtSameFolderList]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="380,186" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:ForEach>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEach>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtSameFolderList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="1201,52" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowSameFolder" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="566,1857" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="StrSameGroupReceiptEmail" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadCell Cell="K3" DisplayName="RecipetEmail_Read Cell" sap:VirtualizedContainerService.HintSize="524,88" sap2010:WorkflowViewState.IdRef="ReadCell_5" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ReadCell Cell="K4" DisplayName="RecipetGroupEmail_Read Cell" sap:VirtualizedContainerService.HintSize="524,88" sap2010:WorkflowViewState.IdRef="ReadCell_6" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="524,186" sap2010:WorkflowViewState.IdRef="ForEach`1_36" Values="[Directory.GetFiles(rowSameFolder(&quot;FolderPath&quot;).ToString)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="itemFiles" />
+                      </ActivityAction.Argument>
+                      <AddToCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_4" Item="[itemFiles.ToString]" />
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+                <ui:MultipleAssign sap2010:Annotation.AnnotationText="StrSameGroupReceiptEmail" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="524,287" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                  <ui:MultipleAssign.AssignOperations>
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_39">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">["[폴더체크] " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["수정중인 Excel 파일이 발견되었습니다." + Environment.NewLine +
+"폴더명 : " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name + Environment.NewLine +
+" " + Environment.NewLine +
+"확인 부탁드립니다."]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_41">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_43">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail + ";" + "James.Han@sgs.com;"]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_44">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                    </scg:List>
+                  </ui:MultipleAssign.AssignOperations>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:MultipleAssign>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendExceptionEmail workflow" sap:VirtualizedContainerService.HintSize="524,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Framework\SendEmail.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrSubject">[StrSubject]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody">[StrBodyOne]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailIdCC">[StrEmailIdCC]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailId">[StrEmailId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrRobotEmailId">[StrRobotId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody2">[StrBodyTwo]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrProcessName">[StrProcessName]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrFileNameError">[StrFileNameError]</InArgument>
+                    <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="In_StrCollectionAttachmentsFiles">[StrCollectionAttachmentsFiles]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <TryCatch DisplayName="Move IoError Folder Invoke power shell_Try Catch" sap:VirtualizedContainerService.HintSize="524,742" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Move-Item" DisplayName="Move IoError Folder_Invoke power shell" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_3">
+                      <ui:InvokePowerShell.Parameters>
+                        <InArgument x:TypeArguments="x:String" x:Key="Path">[rowSameFolder("FolderPath").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="Destination">[StrDirIoBasePathError + "\"]</InArgument>
+                      </ui:InvokePowerShell.Parameters>
+                      <ui:InvokePowerShell.PowerShellVariables>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokePowerShell.PowerShellVariables>
+                    </ui:InvokePowerShell>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="490,579" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="si:IOException">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                        </ActivityAction.Argument>
+                        <If Condition="[exception.Message.Contains(&quot;Cannot create a file when that file already exists.&quot;)]" sap:VirtualizedContainerService.HintSize="484,510" sap2010:WorkflowViewState.IdRef="If_9">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,321" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="358,133" sap2010:WorkflowViewState.IdRef="Delete_3" Path="[StrDirIoBasePathError + &quot;\&quot; + New DirectoryInfo(rowSameFolder(&quot;FolderPath&quot;).ToString).Name]" />
+                              <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Move-Item" DisplayName="Move IoError Folder_Invoke power shell" sap:VirtualizedContainerService.HintSize="358,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_4">
+                                <ui:InvokePowerShell.Parameters>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Path">[rowSameFolder("FolderPath").ToString]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Destination">[StrDirIoBasePathError + "\"]</InArgument>
+                                </ui:InvokePowerShell.Parameters>
+                                <ui:InvokePowerShell.PowerShellVariables>
+                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                </ui:InvokePowerShell.PowerShellVariables>
+                              </ui:InvokePowerShell>
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+                <ClearCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="524,25" sap2010:WorkflowViewState.IdRef="ClearCollection`1_4" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+      </Sequence>
+      <Sequence x:Key="ExcelDataError" sap:VirtualizedContainerService.HintSize="1243,2848" sap2010:WorkflowViewState.IdRef="Sequence_40">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BuildDataTable sap2010:Annotation.AnnotationText="FolderPath                 - 경로&#xA;ExcelName                 - 엑셀이름" DataTable="[DtSameFolderList]" DisplayName="SameFolderList_Build data table" sap:VirtualizedContainerService.HintSize="1201,102" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FolderPath&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ExcelName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BuildDataTable>
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1201,52" sap2010:WorkflowViewState.IdRef="ForEach`1_40" Values="[Directory.GetDirectories(StrDirIoBasePathInput,&quot;*&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:String">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathInput" />
+              </ActivityAction.Argument>
+              <Sequence sap:VirtualizedContainerService.HintSize="1165,1164" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1123,1076" sap2010:WorkflowViewState.IdRef="ForEach`1_39" Values="[Directory.GetDirectories(StrDirIoBasePathOutput,&quot;*&quot;)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput_Region" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="1087,950" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1045,862" sap2010:WorkflowViewState.IdRef="ForEach`1_38" Values="[Directory.GetDirectories(dirIoBasePathOutput_Region,&quot;*&quot;)]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:String">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:String" Name="dirIoBasePathOutput" />
+                              </ActivityAction.Argument>
+                              <Sequence sap:VirtualizedContainerService.HintSize="1009,736" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="967,648" sap2010:WorkflowViewState.IdRef="ForEach`1_37" Values="[Directory.GetFiles(dirIoBasePathInput, &quot;*.xls*&quot;)]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:String">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:String" Name="ExcelFile" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="931,522" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[ExcelFile.Contains(&quot;~&quot;)]" sap:VirtualizedContainerService.HintSize="889,434" sap2010:WorkflowViewState.IdRef="If_10">
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="422,80" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="422,274" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dirIoBasePathInput ,ExcelFile}]" DataTable="[DtSameFolderList]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="380,186" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:ForEach>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEach>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtSameFolderList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="1201,1414" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowSameFolder" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1297" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="StrSameGroupReceiptEmail" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadCell Cell="K3" DisplayName="RecipetEmail_Read Cell" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadCell_7" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ReadCell Cell="K4" DisplayName="RecipetGroupEmail_Read Cell" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadCell_8" SheetName="SOL" WorkbookPath="[rowSameFolder(&quot;ExcelName&quot;).ToString]">
+                  <ui:ReadCell.Result>
+                    <OutArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail]</OutArgument>
+                  </ui:ReadCell.Result>
+                </ui:ReadCell>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="ForEach`1_41" Values="[Directory.GetFiles(rowSameFolder(&quot;FolderPath&quot;).ToString)]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="itemFiles" />
+                      </ActivityAction.Argument>
+                      <AddToCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_5" Item="[itemFiles.ToString]" />
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+                <ui:MultipleAssign sap2010:Annotation.AnnotationText="StrSameGroupReceiptEmail" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,287" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+                  <ui:MultipleAssign.AssignOperations>
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_45">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrSubject]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">["[폴더체크] " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_46">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyOne]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["Excel에 올바르지 않은 값이 발견되었습니다." + Environment.NewLine +
+"폴더명 : " + New DirectoryInfo(rowSameFolder("FolderPath").ToString).Name + Environment.NewLine +
+" " + Environment.NewLine +
+"확인 부탁드립니다."]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_47">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrBodyTwo]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_48">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailId]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameReceiptEmail]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_49">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrEmailIdCC]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[StrSameGroupReceiptEmail + ";" + "James.Han@sgs.com;"]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_50">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[StrProcessName]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[Config("processName").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                    </scg:List>
+                  </ui:MultipleAssign.AssignOperations>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:MultipleAssign>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendExceptionEmail workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Framework\SendEmail.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrSubject">[StrSubject]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody">[StrBodyOne]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailIdCC">[StrEmailIdCC]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrToEmailId">[StrEmailId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrRobotEmailId">[StrRobotId]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrBody2">[StrBodyTwo]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrProcessName">[StrProcessName]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="In_StrFileNameError">[StrFileNameError]</InArgument>
+                    <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="In_StrCollectionAttachmentsFiles">[StrCollectionAttachmentsFiles]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <TryCatch DisplayName="Move IoError Folder Invoke power shell_Try Catch" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Move-Item" DisplayName="Move IoError Folder_Invoke power shell" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_5">
+                      <ui:InvokePowerShell.Parameters>
+                        <InArgument x:TypeArguments="x:String" x:Key="Path">[rowSameFolder("FolderPath").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="Destination">[StrDirIoBasePathError + "\"]</InArgument>
+                      </ui:InvokePowerShell.Parameters>
+                      <ui:InvokePowerShell.PowerShellVariables>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokePowerShell.PowerShellVariables>
+                    </ui:InvokePowerShell>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="si:IOException">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                        </ActivityAction.Argument>
+                        <If Condition="[exception.Message.Contains(&quot;Cannot create a file when that file already exists.&quot;)]" sap:VirtualizedContainerService.HintSize="484,509" sap2010:WorkflowViewState.IdRef="If_11">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,321" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="358,133" sap2010:WorkflowViewState.IdRef="Delete_4" Path="[StrDirIoBasePathError + &quot;\&quot; + New DirectoryInfo(rowSameFolder(&quot;FolderPath&quot;).ToString).Name]" />
+                              <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Move-Item" DisplayName="Move IoError Folder_Invoke power shell" sap:VirtualizedContainerService.HintSize="358,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_6">
+                                <ui:InvokePowerShell.Parameters>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Path">[rowSameFolder("FolderPath").ToString]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Destination">[StrDirIoBasePathError + "\"]</InArgument>
+                                </ui:InvokePowerShell.Parameters>
+                                <ui:InvokePowerShell.PowerShellVariables>
+                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                </ui:InvokePowerShell.PowerShellVariables>
+                              </ui:InvokePowerShell>
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+                <ClearCollection x:TypeArguments="x:String" Collection="[StrCollectionAttachmentsFiles]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="ClearCollection`1_5" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+      </Sequence>
+    </Switch>
+  </Sequence>
+</Activity>
